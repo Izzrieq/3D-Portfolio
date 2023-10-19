@@ -1,12 +1,12 @@
 {
-  "homepage": "https://izzrieq.github.io/3D-Portfolio",
+  "homepage": "https://izzrieq.github.io/3D-Portfolio/",
   "name": "r3f-vite-starter",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --outDir=build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
