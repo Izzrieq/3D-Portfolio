@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && copyfiles -u 1 public/**/* build/",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -30,6 +30,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
+    "copyfiles": "^2.4.1",
     "gh-pages": "^6.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2",
